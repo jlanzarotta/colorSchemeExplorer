@@ -1,0 +1,117 @@
+*colorSchemeExplorer.txt*    Color Scheme Explorer    Last Change: 09 Jun 2005
+
+Color Scheme Explorer                     *color-scheme-explorer* *csexplorer*
+                                Version 7.0.1
+
+Plugin for easily exploring (or browsing) available color schemes
+
+|csexplorer-installation|   Installation
+|csexplorer-usage|          Usage
+|add-local-help|            How to add this help file to vim's help
+|csexplorer-changelog|      Change Log
+|csexplorer-todo|           Todo
+|csexplorer-credits|        Credits
+|csexplorer-copyright|      Copyright
+
+This plugin is only available if 'compatible' is not set.
+
+{Vi does not have any of this}
+
+==============================================================================
+INSTALLATION                                         *csexplorer-installation*
+
+To install:
+  - Download the colorSchemeExplorer.zip from one of the following places:
+    https://github.com/jlanzarotta/colorSchemeExplorer
+    http://www.vim.org/scripts/script.php?script_id=1298
+    or use a package manager like Vundle.
+  - Extract the zip archive into your runtime directory.
+    The archive contains plugin/colorSchemeExplorer.vim, and
+    doc/colorSchemeExplorer.txt.
+  - Start Vim or goto an existing instance of Vim.
+  - Execute the following command:
+>
+      :helptag <your runtime directory>/doc
+<
+    This will generate all the help tags for any file located in the doc
+    directory.
+
+==============================================================================
+USAGE                                                       *csexplorer-usage*
+
+To start exploring, use: >
+ :ColorSchemeExplorer
+
+Command to use once exploring:
+
+ <cr> or       Opens the currently select color scheme.
+ <leftmouse>
+ q             Quit exploring.
+ ?             Displays help information.
+
+Typically one would put csexplorer.vim into the .vim/plugin directory
+(vimfiles\plugin for Windows) where it becomes automatically available
+for use. It sets up it's default command :ColorSchemeExplorer.
+
+Once invoked, Color Scheme Explorer display a list of all available color
+schemes. You are then able to move the cursor to the line containing the color
+scheme of choice. Once you have selected the color scheme you would like to
+see, your color scheme will change to reflect that scheme. If you would like
+to see another scheme, simply select a different one.
+
+You can avoid loading this plugin by setting the "loaded_csExplorer"
+variable: >
+  :let loaded_csExplorer = 1
+
+===============================================================================
+CHANGE LOG                                               *csexplorer-changelog*
+
+7.0.1    June 09, 2005
+    - Initial release.
+
+===============================================================================
+TODO                                                          *csexplorer-todo*
+
+None at this time.
+
+===============================================================================
+CREDITS                                                    *csexplorer-credits*
+
+Author: Jeff Lanzarotta <delux256-vim at yahoo dot com>
+
+Credit must go out to Bram Moolenaar and all the Vim developers for
+making the world's best editor (IMHO).
+
+===============================================================================
+COPYRIGHT                                                *csexplorer-copyright*
+
+Copyright (c) 2005-2013, Jeff Lanzarotta
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the {organization} nor the names of its contributors may
+  be used to endorse or promote products derived from this software without
+  specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===============================================================================
+vim:tw=78:noet:ts=4:ft=help:norl:
